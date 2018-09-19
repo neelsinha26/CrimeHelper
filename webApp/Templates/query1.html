@@ -1,0 +1,115 @@
+
+
+
+<div class="container-fluid" id="demo-view">
+    <!--<link rel="stylesheet" type="text/css" href="./css/view.css">-->
+        <div class = "row">
+
+            <div class = 'col-md-12 header-head-for-all-html'>
+                <a href = "user" style = "text-decoration: none; color: #FFF; width:100%;">
+                    <h1 class = 'display-3'>Los Angeles Police Department Crime Watchers</h1>
+                </a>
+            </div>
+        </div>
+        <div class = "row menu-column-for-head">
+            <div class = "col-md-6 menu-column-for-head-tab">
+                <a href = "user" style = "text-decoration: none; color: #FFF;">HOME PAGE</a>
+            </div>
+            <div class = "col-md-6 menu-column-for-head-tab">
+                <a href = "aboutUs" style = "text-decoration: none; color: #FFF;">ABOUT US</a>
+            </div>
+        </div>
+        <div class = "row gap-20px">
+            <div class = col>
+                <p></p>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-8" style = " border-right: 1px solid #000;">
+            <div class = "row">
+
+            </div>
+            <div ng-if="areaByCatCtrl.flag" class="col-md-12">
+                {{areaByCatCtrl.venues.length}}
+                <nvd3 options="areaByCatCtrl.graphOptions" data="areaByCatCtrl.graphData"></nvd3>
+            </div>
+            <!-- this is the popup that will display when user hovers over graph bar -->
+            <div id="tooltip">
+                <span id="alfabet" style='line-height:3em; font:2em sans-serif;'></span>
+                <p><span id="year"></span></p>
+                <p id="popup-title"></p>
+                <p><span id="value"></span></p>
+            </div>
+        </div>
+        <div class="col-md-4 mt100 standard-text" id="demo-text">
+
+            <p id = "lesser-title">The data is chronologically available from 2015 to 2017</p>
+            <p id = "sub-title">Enter your Starting Time and Ending time</p>
+            <p id = "sub-title">Then, proceed to select the type of crime, you wish to learn about.</p>
+            <p id = "sub-title">The idea of this exercise is to initiate the analysis of occurrence of crime on a temporal frame. </p>
+
+            <hr>
+
+            <form class="form-inline container-fluid">
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <!--<input data-ng-model="vm.userDate1" type="text" class="form-control" id="date1" placeholder="1962">-->
+                        <p><label for="startTime">Pick start time</label>
+                        <input type="time" id="startTime" name="input" ng-model="areaByCatCtrl.startTime"
+                               placeholder="HH:mm" required /></p>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <!--<input data-ng-model="vm.userDate2" type="text" class="form-control" id="date2" placeholder="1976">-->
+                        <p><label for="endTime">Pick end time</label>
+                        <input type="time" id="endTime" name="input" ng-model="areaByCatCtrl.endTime"
+                               placeholder="HH:mm" required /></p>
+                    </div>
+                </div>
+                <div class="row col-md mt-md-2">
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{areaByCatCtrl.selectedCat.CRIMEDESCRIPTION}}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a ng-click="areaByCatCtrl.selectCat(crime)" class="dropdown-item" ng-repeat="crime in areaByCatCtrl.categories">
+                                {{crime.CRIMEDESCRIPTION}}
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row col-md-12 mt-md-2">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-6">
+                        <button data-ng-click="areaByCatCtrl.generateGraph()" type="submit" class="btn btn-primary" id="gen-button">Go!</button>
+                    </div>
+                    <!--<button data-ng-click="vm.resetGraph()" type="submit" class="btn" id="reset-button">Reset Graph</button>-->
+                </div>
+
+
+
+
+
+            </form>
+
+            <hr>
+
+            <p></p>
+
+            <p></p>
+
+            <p></p>
+        </div>
+
+    </div>
+
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <footer style = "width: 100%">Group #18. Copyright &copy; LAPD</footer>
+
+    <!--<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/stylemin.css">-->
+
+</div>
+
+

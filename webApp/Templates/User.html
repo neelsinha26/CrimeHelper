@@ -1,0 +1,87 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+  </script>
+
+</head>
+<body>
+  <div class="container-fluid" id="demo-view">
+    <div class = "row">
+
+      <div class = 'col-md-12 header-head-for-all-html'>
+        <a href = "user" style = "text-decoration: none; color: #FFF; width:100%;">
+        <h1 class = 'display-3'>Los Angeles Police Department Crime Watchers</h1>
+        </a>
+      </div>
+    </div>
+    <div class = "row menu-column-for-head">
+      <div class = "col-md-6 menu-column-for-head-tab">
+        <a href = "user" style = "text-decoration: none; color: #FFF;">HOME PAGE</a>
+      </div>
+      <div class = "col-md-6 menu-column-for-head-tab">
+        <a href = "aboutUs.html" style = "text-decoration: none; color: #FFF;">ABOUT US</a>
+      </div>
+    </div>
+    <div class = "row gap-20px">
+      <div class = col>
+        <p></p>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-md-4">
+        <h1  class = "display-4">
+          CRIME WATCH
+        </h1>
+        <p class = "lead">
+          Colloquially known as <mark>CRIMEWATCH</mark>; this website application, primarily designed to analyse
+          historic crime data from the city of Los Angeles, aims to provide significant methods to make user
+          interactible set of solutions for the crime that occurs in this city.
+          Imagine if you moved to the city of L.A. and you do not have a point of reference,
+          The application lets the user recognize patterns in crime, weapons used and
+          the demographics of victims which facilitates better understanding of crime
+          in its entirety.
+        </p>
+      </div>
+      <div class = "col-md-6">
+        <h1 class = "display-4" style = "text-align: center;">
+         Available Options
+        </h1>
+        <div style = "text-align:center">
+        <div class = 'btn-group-vertical'>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref="areaByCat"  style = "font-size: 1.5em;">CRIME BY TIME</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref="unsafeAreas"  style = "font-size: 1.5em;">AREAS BY CRIME TYPE</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref="unsafeAreaByGender" style = "font-size: 1.5em;">CRIME BY AGE, SEX, RACE</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref="crimeReported" style = "font-size: 1.5em;">CRIMES OCCURED BY THE NEIGHBOURHOOD</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref = "countQuery" style = "font-size: 1.5em;">TOTAL QUERY COUNT</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref = "percentageQuery" style = "font-size: 1.5em;">PERCENTAGE QUERY</button>
+          <button type = "button" class = "btn btn-outline-dark btn-lg" ui-sref = "weaponQuery" style = "font-size: 1.5em;">WEAPON QUERY</button>
+
+        </div>
+        </div>
+      </div>
+    </div>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<footer style = "width: 100%">Group #18. Copyright &copy; LAPD</footer>
+
+</div>
+
+</body>
+</html>

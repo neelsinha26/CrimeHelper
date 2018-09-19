@@ -1,0 +1,28 @@
+<div class = "row">
+
+    <div class = 'col-md-12 header-head-for-all-html'>
+        <a href = "user" style = "text-decoration: none; color: #FFF; width:100%;">
+            <h1 class = 'display-3'>Los Angeles Police Department Crime Watchers</h1>
+        </a>
+    </div>
+</div>
+<div class = "row menu-column-for-head">
+    <div class = "col-md-6 menu-column-for-head-tab">
+        <a href = "user" style = "text-decoration: none; color: #FFF;">HOME PAGE</a>
+    </div>
+    <div class = "col-md-6 menu-column-for-head-tab">
+        <a href = "aboutUs.html" style = "text-decoration: none; color: #FFF;">ABOUT US</a>
+    </div>
+</div>
+<div class = "row gap-20px">
+    <div class = col>
+        <p></p>
+    </div>
+</div>
+<div ng-if="unsafeAreaCtrl.flag" class="col-md-12">
+    {{unsafeAreaController.venues.length}}
+    <nvd3 options="unsafeAreaCtrl.graphOptions" data="unsafeAreaCtrl.graphData"></nvd3>
+</div>
+
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<footer style = "width: 100%">Group #18. Copyright &copy; LAPD</footer>

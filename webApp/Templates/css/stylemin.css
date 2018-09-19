@@ -1,0 +1,153 @@
+#tooltip p,#year,.standard-text,input[type=number],input[type=email],input[type=url],input[type=search],input[type=tel],input[type=color],input[type=text],input[type=password],input[type=datetime],input[type=datetime-local],input[type=date],input[type=month],input[type=time],input[type=week],select,textarea{
+    font-size:16px
+}
+#about-view,#demo-view{
+    padding-right:50px;
+    padding-left:50px;
+    font-style:Sans-Serif;
+}
+#popup-title,#sub-title{
+    font-style:italic
+}
+.standard-text{
+    font-family:Helvetica,Sans-Serif;
+    color:#555;
+    font-weight:100;
+    line-height:2em
+}
+.jumbotron .btn,.jumbotron h1{
+    font-weight:300;
+    color:#39f
+}
+*{
+    border-radius:0!important
+}
+.jumbotron{
+    background:0 0
+}
+.jumbotron .btn{
+    border-color:#39f;
+    background-color:transparent;
+    font-family:'Helvetica Neue'
+}
+.jumbotron .btn:hover{
+    background-color:#39f;
+    color:#fff
+}
+#jumbo-highlight{
+    font-weight:400;
+    color:#33f
+}
+.navbar{
+    background:0 0;
+    border:none
+}
+#demo-view{
+    margin-top:-30px
+}
+path{
+    stroke:#4682b4;
+    stroke-width:1;
+    fill:none
+}
+svg text{
+    font-family:Helvetica,Sans-Serif;
+    color:#555
+}
+.axis line,.axis path{
+    fill:none;
+    stroke:grey;
+    stroke-width:1;
+    shape-rendering:crispEdges
+}
+.svg-container{
+    display:inline-block;
+    position:relative;
+    width:100%;
+    padding-bottom:100%;
+    height:100%;
+    vertical-align:top;
+    overflow:hidden
+}
+.svg-content-responsive{
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    left:0
+}
+#demo-text{
+    margin-top:20px
+}
+.form-inline{
+    margin-bottom:20px
+}
+#date1,#date2{
+    width:100px;
+    border-radius:0;
+    margin-top:10px
+}
+#tooltip{
+    position:absolute;
+    width:200px;
+    height:auto;
+    padding:10px;
+    background-color:#fff;
+    pointer-events:none
+}
+#tooltiphidden{
+    display:none
+}
+#tooltip p{
+    margin:0;
+    font-family:sans-serif;
+    line-height:20px
+}
+#popup-title,#value,#year{
+    font-family:Helvetica,Sans-Serif
+}
+#year{
+    font-weight:600
+}
+#value{
+    font-weight:300;
+    font-size:12px
+}
+#popup-title{
+    font-weight:200
+}
+#lesser-title{
+    font-size:17px;
+    font-weight:600
+}
+#gen-button{
+    border:1px solid #5AA67E;
+    background-color:transparent;
+    color:#5AA67E;
+    margin-top:10px;
+    margin-left:10px
+}
+#gen-button:hover{
+    border-color:#8AE3B5;
+    background-color:#8AE3B5;
+    color:#fff
+}
+#reset-button{
+    border:1px solid #B85878;
+    background-color:transparent;
+    color:#B85878;
+    margin-top:10px
+}
+#reset-button:hover{
+    border-color:#EB7FA3;
+    background-color:#EB7FA3;
+    color:#fff
+}
+.about-box{
+    padding:10px 30px 30px 50px
+}
+
+
+.neel {
+
+
+}

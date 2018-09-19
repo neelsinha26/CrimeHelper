@@ -1,0 +1,48 @@
+<html ng-app="crime-helper">
+<head>
+    <title>crime-helper</title>
+    <meta charset="utf-8">  <!-- it's important for d3.js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/d3/d3.js"></script>
+    <script src="../bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="../bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <link rel="stylesheet" href="../bower_components/nvd3/build/nv.d3.css">
+    <script type="text/javascript" src = "../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src = "../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src = "../bower_components/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src = "../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src = "../bower_components/moment/moment.js"></script>
+    <script type="text/javascript" src = "../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src = "../bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src = "app.js"></script>
+    <script type="text/javascript" src = "routes/routes.js"></script>
+    <script type="text/javascript" src = "Controllers/homeController.js"></script>
+    <script type="text/javascript" src = "Controllers/unsafeAreaController.js"></script>
+    <script type="text/javascript" src = "Controllers/areaByCatController.js"></script>
+    <script type="text/javascript" src = "Controllers/unsafeAreaByGenderController.js"></script>
+    <script type="text/javascript" src = "Controllers/crimeReportedController.js"></script>
+    <script type="text/javascript" src = "Controllers/countQueryController.js"></script>
+    <script type="text/javascript" src = "Controllers/percentageQueryController.js"></script>
+    <script type="text/javascript" src = "Controllers/weaponQueryController.js"></script>
+
+
+
+
+    <script type="text/javascript" src = "Services/api.service.js"></script>
+    <script type="text/javascript" src = "Services/barChart.service.js"></script>
+    <script type="text/javascript" src = "Services/pieChart.service.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bower_components/animate.css/animate.css" />
+
+
+
+
+
+</head>
+<body>
+<div ui-view></div>
+</body>
+</html>

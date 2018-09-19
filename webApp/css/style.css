@@ -1,0 +1,313 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+html, body {
+    text-align: center;
+}
+p {text-align: left;}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #697281;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #b2ebf2;
+    background: #26476E url(../images/background.png) repeat-x;
+}
+*
+{
+    margin: 0 auto 0 auto;
+    text-align:left;}
+
+#page
+{
+    margin: 0 auto 0 auto;
+    display: block;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+    width: 753px;
+}
+
+#header
+{
+    margin-top:25px;
+    padding-top:63px;
+    padding-left:30px;
+    padding-right:30px;
+    background-image:url(../images/header.png);
+    background-repeat:no-repeat;
+    height:122px;
+    width:753px;
+    overflow:hidden;
+}
+
+#header h1, #header h2
+{
+    margin-left:0px;
+    width:693px;
+    position:relative;
+    color:#000000;
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    clear:both;
+}
+
+#header h1
+{
+    margin-left:0px;
+    width:693px;
+    position:relative;
+    color:#26476E;
+    font-size:30px;
+}
+
+
+
+#bar
+{
+
+    background-image:url(../images/bar.png);
+    background-repeat:no-repeat;
+    height:53px;
+    width:750px;
+    padding-bottom:15px;
+    text-align:center;
+    margin:0 auto 0 auto;
+}
+
+#bar ul {
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    list-style-type: none;
+    height: 74px;
+    text-align:center;
+}
+#bar ul li , #bar ul li a, #bar ul li a:visited{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    overflow: hidden;
+    display: inline;
+    text-align:center;
+    line-height:65px;
+    color:blue;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+#bar ul li a:hover
+{
+    color:#000000;
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+
+
+.contentTitle
+{
+    width:700px;
+    height:44px;
+    margin-top:20px;
+    margin-left:0px;
+    margin-right:25px;
+    background-image:url(tab_back.png);
+    background-repeat:no-repeat;
+
+}
+
+.contentTitle h1
+{
+    margin-left:21px;
+    padding-top:8px;
+    font-size:21px;
+    font-weight:bold;
+    letter-spacing:-1px;
+    color:#FFFFFF;
+}
+
+
+.contentText
+{
+    width:680px;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:13px;
+    color:#FFFFFF;
+    line-height:30px;
+}
+
+a
+{
+    text-decoration:none;
+    color:#F1F3F8;
+}
+
+a:hover
+{
+    border-bottom:1px dotted #F1F3F8;
+}
+
+
+#footer {
+    width: 750px;
+    height:20px;
+    text-align:center;
+    font-size:9px;
+    color:#223F8D;
+    padding-top:20px;
+}
+
+html, body {
+    text-align: center;
+}
+p {
+    margin:7px;
+    text-align: left;
+    text-align:justify;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.button4 {border-radius: 12px;}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+.mt100{
+    margin-top: 100px;
+}
+.header-head-for-all-html{
+    background-color: #000;
+    color: #fff;
+    font-family : monospace, 'Sans-Serif';
+    font-size: 2em;
+    width : 100%;
+    border: 1px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+div.menu-column-for-head{
+    background-color: #000;
+    color: #fff;
+    font-family : monospace, 'Sans-Serif';
+    font-size: 2em;
+    border: 1px solid #FFF;
+}
+div.menu-column-for-head-tab{
+    border: 1px solid #FFF;
+}
+div.gap-20px{
+    width : 20px;
+}

@@ -1,0 +1,115 @@
+
+
+
+<div class="container-fluid" id="demo-view">
+    <div class = "row">
+
+        <div class = 'col-md-12 header-head-for-all-html'>
+            <a href = "user" style = "text-decoration: none; color: #FFF; width:100%;">
+                <h1 class = 'display-3'>Los Angeles Police Department Crime Watchers</h1>
+            </a>
+        </div>
+    </div>
+    <div class = "row menu-column-for-head">
+        <div class = "col-md-6 menu-column-for-head-tab">
+            <a href = "user" style = "text-decoration: none; color: #FFF;">HOME PAGE</a>
+        </div>
+        <div class = "col-md-6 menu-column-for-head-tab">
+            <a href = "aboutUs.html" style = "text-decoration: none; color: #FFF;">ABOUT US</a>
+        </div>
+    </div>
+    <div class = "row gap-20px">
+        <div class = col>
+            <p></p>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="./css/view.css">
+
+
+    <!-- this is the popup that will display when user hovers over graph bar -->
+    <div id="tooltip">
+        <span id="alfabet" style='line-height:3em; font:2em sans-serif;'></span>
+        <p><span id="year"></span></p>
+        <p id="popup-title"></p>
+        <p><span id="value"></span></p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+
+
+
+        <table class="table table-striped table-dark"">
+            <tr>
+                <th scope="col">S NO.</th>
+
+                <th scope="col">STREET ADD</th>
+                <th scope="col">DATE OCCURED</th>
+                <th scope="col">TIME OCCURED</th>
+                <th scope="col">CRIME DESCRPN</th>
+            </tr>
+
+
+            <tr ng-repeat="x in result">
+                <th scope="row">{{x.RN}}</th>
+
+                <td>{{x.ST_ADDR}}</td>
+                <td>{{x.DATE_OCCURRED |  date:'MM/dd/yyyy'}}</td>
+                <td>{{x.TIME_OCCURRED}}</td>
+                <td>{{x.CRIMEDESCRIPTION}}</td>
+
+            </tr>
+        </table>
+            <br>
+
+            <button ng-click="crimeReportedCtrl.backPage()" class="btn" id="gen-button">Back Page</button>
+
+            <button ng-click="crimeReportedCtrl.nextPage()" class="btn" id="gen-button">Next Page</button>
+
+        </div>
+
+        <div class="col-sm-6 standard-text" id="demo-text">
+
+            <p id="lesser-title">L.A. CRIME DATA AVAILABLE FROM 2014-2017.</p>
+            <p id="sub-title">SELECT THE AREA AND THEN SEE ALL THE CRIME THAT HAS HAPPENED IN IT, IN A TABLE FORMAT</p>
+
+            <hr>
+
+            <form class="form-inline">
+                <!--<div class="form-group">-->
+                    <!--<input data-ng-model="crimeReportedCtrl.area1" type="text" class="form-control" id="area1" placeholder="AREA">-->
+                <!--</div>-->
+                <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{crimeReportedCtrl.area1}}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a ng-click="crimeReportedCtrl.selectArea(area)" class="dropdown-item" ng-repeat="area in crimeReportedCtrl.areaList">
+                            {{area.AREA_NAME}}
+                        </a>
+                    </div>
+                </div>
+
+
+                <button ng-click="crimeReportedCtrl.myFunc()" class="btn" id="gen-button">Go!</button>
+            </form>
+
+            <hr>
+
+            <p>The generated results are from the data collected from teh secured dataset repositories associated with the L.A. Police Department.</p>
+
+            <p></p>
+
+            <p></p>
+        </div>
+    </div>
+
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <footer style = "width: 100%">Group #18. Copyright &copy; LAPD</footer>
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/stylemin.css">
+
+</div>
+
+
